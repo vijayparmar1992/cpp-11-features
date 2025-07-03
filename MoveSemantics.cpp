@@ -57,6 +57,10 @@ public:
 		}
 		return *this;
 	}
+	~MyClass()
+	{
+		delete ptr;
+	}
 };
 
 // In move functions, there is no new memory allocation. Hence, we can assign noexcept,
