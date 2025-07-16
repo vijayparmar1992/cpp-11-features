@@ -19,7 +19,7 @@ int main()
 	auto lambda = [=]() -> int {return a + b; }; // Captures all variables by value
 	cout << lambda() << endl;
 
-	auto lambdaR = [&]() {a += 10; }; // Captures all variables by value
+	auto lambdaR = [&]() {a += 10; }; // Captures all variables by address
 	lambdaR(); // Executing lambdaR
 	cout << a << endl;
 	cout << square(10) << endl;
